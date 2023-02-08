@@ -11,8 +11,9 @@ from supervision.draw.color import ColorPalette
 from supervision.tools.detections import Detections, BoxAnnotator
 
 
-st.title('DEMO: Object detection using yolo')
-st.write('The full github code is here.')
+st.title('DEMO: Object detection using YOLOv8 with COCO dataset.')
+st.write("The full github code is [here](https://github.com/mariotsato/YOLOv8_object_detection_streamlit)")
+
 
 ########################################################################
 #TEST 2
