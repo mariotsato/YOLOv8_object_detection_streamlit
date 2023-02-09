@@ -7,3 +7,6 @@
 ### References:
 - <a href="https://github.com/niconielsen32/YOLOv8-Class">niconielsen32/YOLOv8-Class</a>
 - <a href="https://github.com/whitphx/streamlit-webrtc">whitphx/streamlit-webrtc</a>
+
+
+### Feel free to use/change/share the code
