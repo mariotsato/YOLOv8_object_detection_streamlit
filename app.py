@@ -1,7 +1,7 @@
 
 import streamlit as st
 from streamlit_webrtc import webrtc_streamer, WebRtcMode, RTCConfiguration
-import cv2
+#import cv2
 import av #strealing video library
 import numpy as np
 import torch
@@ -16,7 +16,6 @@ st.write("The full github code is [here](https://github.com/mariotsato/YOLOv8_ob
 
 
 ########################################################################
-#TEST 2
 
 #define gpu or cpu
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -66,7 +65,7 @@ def plot_bboxes(results, frame):
     in detections]
     # Annotate and display frame
     frame = box_annotator.annotate(frame=frame, detections=detections, labels=labels)
-    frame = cv2.flip(frame, 1)
+    frame = np.fliplr(frame)
     return frame
 
 
@@ -77,7 +76,7 @@ class VideoProcessor:
         img = plot_bboxes(results,img)
         # fps = 1/np.round(end_time - start_time, 2)
         # cv2.putText(img, f'FPS: {int(fps)}', (20,70), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0,255,0), 2)
-        img = cv2.flip(img, 1)
+        img = np.fliplr(img)
 
         return av.VideoFrame.from_ndarray(img, format="bgr24")
 

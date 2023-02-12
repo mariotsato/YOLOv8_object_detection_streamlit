@@ -1,8 +1,8 @@
 av==10.0.0
 numpy==1.21.5
-opencv_python==4.7.0.68
 streamlit==1.17.0
 streamlit_webrtc==0.44.2
 supervision==0.1.0
-torch==2.0.0.dev20230108
-ultralytics==8.0.28
+torch==1.13.1
+ultralytics==8.0.31
+opencv-python-headless==4.7.0.68
