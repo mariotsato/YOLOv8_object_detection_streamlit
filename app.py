@@ -29,7 +29,7 @@ model.fuse()
 CLASS_NAMES_DICT = model.model.names
 
 #define the box_annotator
-box_annotator = BoxAnnotator(color=ColorPalette(), thickness=3, text_thickness=3, text_scale=1.5)
+box_annotator = BoxAnnotator(color=ColorPalette(), thickness=3, text_thickness=1, text_scale=0.5)
 
 #define the rtc config
 RTC_CONFIGURATION = RTCConfiguration(
